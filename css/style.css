@@ -1,0 +1,658 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f5f7fa;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #0b2d5c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: #0b2d5c;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    background-color: #0b2d5c;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #174a8b;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: white;
+}
+
+.about h2 {
+    color: #0b2d5c;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.services h2 {
+    color: #0b2d5c;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.service-card {
+    display: inline-block;
+    width: 280px;
+    margin: 15px;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #0b2d5c;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #0b2d5c;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .service-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #93c5fd;
+}
+
+
+/* MENU BUTTON */
+
+.menu-btn {
+    display: none;
+
+    background: transparent;
+    color: white;
+
+    border: none;
+
+    font-size: 28px;
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        gap: 0;
+
+        background-color: #0b2d5c;
+
+        padding: 10px 0;
+
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 15px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+}
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    /* Sections */
+    section {
+        padding: 50px 20px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    /* Services */
+    .services {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 25px 15px;
+    }
+}
+/* HAMBURGER MENU */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MOBILE MENU */
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   GALLERY
+   ========================= */
+
+.gallery {
+    padding: 70px 8%;
+    text-align: center;
+    background: #f5f7fa;
+}
+
+.gallery h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.gallery-intro {
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   MOBILE GALLERY
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .gallery {
+        padding: 50px 20px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+}
+
+/* ============================= */
+/* FULL-SCREEN IMAGE VIEWER */
+/* ============================= */
+
+.image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image inside viewer */
+.image-viewer img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Close button */
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    background: transparent;
+    color: white;
+
+    font-size: 35px;
+    padding: 5px 12px;
+
+    cursor: pointer;
+    z-index: 10001;
+}
+
+.close-viewer:hover {
+    background: transparent;
+    color: #93c5fd;
+}
+
+/* Previous button */
+.viewer-prev,
+.viewer-next {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+
+    border: none;
+    border-radius: 50%;
+
+    width: 55px;
+    height: 55px;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.viewer-prev {
+    left: 25px;
+}
+
+.viewer-next {
+    right: 25px;
+}
+
+.viewer-prev:hover,
+.viewer-next:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .image-viewer img {
+        max-width: 92%;
+        max-height: 75%;
+    }
+
+    .viewer-prev,
+    .viewer-next {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .viewer-prev {
+        left: 10px;
+    }
+
+    .viewer-next {
+        right: 10px;
+    }
+
+    .close-viewer {
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+    }
+}
+
+/* ============================= */
+/* SERMONS SECTION */
+/* ============================= */
+
+.sermons {
+    padding: 70px 8%;
+    background-color: white;
+    text-align: center;
+}
+
+.sermons h2 {
+    color: #0b2d5c;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.sermons-intro {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.sermons-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.sermon-card {
+    background-color: #f5f7fa;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+
+    text-align: left;
+}
+
+.sermon-video {
+    width: 100%;
+    background-color: #000;
+}
+
+.sermon-video video {
+    width: 100%;
+    height: 210px;
+    display: block;
+    object-fit: cover;
+}
+
+.sermon-content {
+    padding: 20px;
+}
+
+.sermon-content h3 {
+    color: #0b2d5c;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.sermon-preacher,
+.sermon-date {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.sermon-content button {
+    margin-top: 15px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .sermons {
+        padding: 50px 20px;
+    }
+
+    .sermons-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sermon-video video {
+        height: 230px;
+    }
+}
