@@ -8,9 +8,12 @@ function togglemenu(){
 // =============================
 
 const galleryImages = [
-    "images/cbc church.jpg",
-    "images/church members.jpg",
-    "images/sharing word of God.jpg",
+    "images/church 1.jpeg",
+    "images/church 2.jpeg",
+    "images/church 3.jpeg",
+    "images/church 4.jpeg",
+    "images/church 5.jpeg",
+    "images/church 6.jpeg",
 ];
 
 let currentImage = 0;
